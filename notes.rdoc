@@ -1,0 +1,10 @@
+Notes
+
+getAllTweets:
+- Action makes call to get data from API
+- API gets data and makes ServerAction to pass along data
+- ServerAction told dispatcher it has data
+- dispatcher labeled data and dispatched it
+- store registeres interest in data
+- store stores data and emits change to view
+- view reads data out of the store
