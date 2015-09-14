@@ -1,13 +1,11 @@
+import React from 'react';
 import TweetActions from "../actions/TweetActions";
 
 export default class TweetBox extends React.Component {
   sendTweet(event) {
     event.preventDefault();
-    // this.props.sendTweet(React.findDOMNode(this.refs.tweetTextArea).value);
-    TweetActions.sendTweet(React.findDOMNode(this.refs.tweetTextArea).value);
-    // this.props.sendTweet(this.refs.tweetTextArea.value);
-    React.findDOMNode(this.refs.tweetTextArea).value = '';
-    // this.refs.tweetTextArea.value = '';
+    TweetActions.sendTweet(this.refs.tweetTextArea.value);
+    this.refs.tweetTextArea.value = '';
   }
   render() {
     return (
