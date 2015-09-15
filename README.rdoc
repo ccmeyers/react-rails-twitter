@@ -4,3 +4,4 @@ Following the React.js on Rails course on pluralsight.com
 - start postgres server
 - start rails server
 - run `webpack -w -d` (watch and debug - for sourcemaps)
+- run `guard` for livereload listening
